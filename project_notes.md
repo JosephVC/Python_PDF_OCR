@@ -15,9 +15,8 @@ following on how to use tesseract using a tutorial
 
   `tesseract.exe test_data.png .test_data_out.txt -l eng`
 
-** pdfminer.six - https://pdfminersix.readthedocs.io/en/latest/index.html - can be used to extract particular page numbers to text; maybe convert those back to pdf?
+**pdfminer.six - https://pdfminersix.readthedocs.io/en/latest/index.html - can be used to extract particular page numbers to text; maybe convert those back to pdf?**
 
-                                                                                                                                                                                                                                                                                                                 
 
 
 ## TASK LIST
@@ -25,6 +24,7 @@ following on how to use tesseract using a tutorial
 - [x] get some experience in said package - online tutorials
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
+- [ ] figure out a way to OCR an image via Tesseract
 - [ ] figure out how to export OCR'd information to PDF - will tesseract work for this??
     - if tesseract can't do this all by itself, I'll need to create a toolchain to:
       1. convert a pdf to an image - png, whatever
