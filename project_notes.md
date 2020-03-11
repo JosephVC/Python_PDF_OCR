@@ -24,10 +24,8 @@ following on how to use tesseract using a tutorial
 - [x] get some experience in said package - online tutorials
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
-- [ ] figure out a way to OCR an image via Tesseract
+- [x] figure out a way to OCR an image via Tesseract
+- [ ] create a pipeline to convert a pdf page to an image then OCR that image
+- [ ] the above, but for multiple pdf pages
 - [ ] figure out how to export OCR'd information to PDF - will tesseract work for this??
-    - if tesseract can't do this all by itself, I'll need to create a toolchain to:
-      1. convert a pdf to an image - png, whatever
-      2. OCR that image
-      3. create the final OCR'd pdf from the above OCR'd image
--
+    
