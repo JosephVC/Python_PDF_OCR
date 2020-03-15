@@ -19,7 +19,7 @@ following on how to use tesseract using a tutorial
 
 
 
-## TASK LIST
+## TASK LIST - OCR project
 - [x] install a quality OCR package - tesseract in this case
 - [x] get some experience in said package - online tutorials
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
@@ -29,3 +29,5 @@ following on how to use tesseract using a tutorial
 - [ ] the above, but for multiple pdf pages
 - [ ] figure out how to export OCR'd information to PDF - will tesseract work for this??
     
+## TASK LIST - web site
+- [ ]

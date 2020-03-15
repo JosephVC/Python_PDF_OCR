@@ -1,4 +1,5 @@
 # Using Tesseract OCR with Python
+# TO RUN THE CODE: python ocr.py --image tests/example_01.png
 
 # import the  necessary packages
 from PIL import Image
