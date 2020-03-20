@@ -8,7 +8,14 @@ import argparse
 from cv2 import cv2
 import os
 
+"""
+images = convert_from_path('meetingminutes.pdf')
 
+for image in images:
+   image.save('output' + str(i) + '.jpg', 'JPEG')
+   i +=1
+   
+"""
 # construct the argument parser 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, 
