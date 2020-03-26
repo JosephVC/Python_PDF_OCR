@@ -17,6 +17,13 @@ following on how to use tesseract using a tutorial
 
 **pdfminer.six - https://pdfminersix.readthedocs.io/en/latest/index.html - can be used to extract particular page numbers to text; maybe convert those back to pdf?**
 
+3.26.20 - There seems to be no real way to get around needing to convert a portion of text, whether it's from a pdf or some other format, to an image **first** and then applying OCR to the text in the image.  I got a bit excited and confused thinking I found a way around this.  So, as long as I can 
+- split up a multi-page pdf into multiple images, 
+- then iterate over those images to OCR them, 
+- **then** convert the OCR'd images back into pdf format
+
+I'll be good.
+
 
 
 ## TASK LIST - OCR project
@@ -24,10 +31,12 @@ following on how to use tesseract using a tutorial
 - [x] get some experience in said package - online tutorials
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
-- [x] figure out a way to OCR an image via Tesseract
-- [ ] create a pipeline to convert a pdf page to an image then OCR that image
-- [ ] the above, but for multiple pdf pages
-- [ ] figure out how to export OCR'd information to PDF - will tesseract work for this??
-    
+- [x] figure out a way to OCR an image via Tesseract/pytesseract
+- [x] OCR a pdf in-place (you OCR the pdf itself)
+ 
 ## TASK LIST - web site
 - [ ]
+
+## Conceptual tasks
+- [ ] understand what OCR is
+- [ ] what is the OCR engine actually doing

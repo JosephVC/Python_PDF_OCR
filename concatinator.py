@@ -14,7 +14,9 @@ def concatenate(paths, output):
     )
         
     writer.write(output)
-    
+
+
+# TODO: make command line arguments for this code
 if __name__ == '__main__':
     paths = ['sample_pdfs/reportlab-sample.pdf', 'sample_pdfs/w9.pdf']
     concatenate(paths, 'concatenate.pdf')
