@@ -1,11 +1,6 @@
 # Using Tesseract OCR with Python
-# TO RUN THE CODE: python ocr.py --image tests/example_01.png
+# TO RUN THE CODE: python ocr.py --image sample_images/example_01.png
 
-
-#ALL THE BELOW IS TOO MUCH WORK
-# THE WORK IS ALREADY DONE BY PYTESSERACT
-# THE BELOW DOES GIVE YOU MORE OPTIONS
-  # SO UNDERSTAND THOSE OPTIONS
 
 # import the  necessary packages
 from PIL import Image
@@ -13,9 +8,6 @@ import pytesseract
 import argparse
 from cv2 import cv2
 import os
-
-# no need to import this, as we pytesseract already allows for in-place OCR of pdfs
-# without the need to convert pdfs to images
 import pdf_page_to_image
 
 
@@ -23,18 +15,16 @@ import pdf_page_to_image
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, 
     help="path to input image to be OCR'd")
-ap.add_argument("-p", "--preprocess", type=str, default="thresh",
-    help="type of preprocessing to be done")
+# ap.add_argument("-p", "--preprocess", type=str, default="thresh",
+#     help="type of preprocessing to be done")
 args = vars(ap.parse_args())
 
 
 # load the example image and convert it to grayscale
-
-
 image = cv2.imread(args["image"])
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# check to see if we shoudl apply thresholding to preprocess the image
+# check to see if we should apply thresholding to preprocess the image
 if args["preprocess"] == "thresh":
     gray = cv2.threshold(gray, 0, 255,
         cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]

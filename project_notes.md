@@ -32,10 +32,14 @@ I'll be good.
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
 - [x] figure out a way to OCR an image via Tesseract/pytesseract
-- [x] OCR a pdf in-place (you OCR the pdf itself)
+- [ ] alter program in such a way as to 
+    -  [ ] iterate through a pdf and generate images of each page
+    - [ ] iterate through those images to OCR them
+    - [ ] recombine those images (in their oritinal order) into a now-OCR'd pdf
+- [] now that we have a working OCR program, we can tack on combining, splitting, rotating pdfs to make a fuller-featured application
  
 ## TASK LIST - web site
-- [ ]
+- [ ] I'm wanting to explore React more than Django.
 
 ## Conceptual tasks
 - [ ] understand what OCR is
