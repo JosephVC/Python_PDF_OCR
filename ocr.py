@@ -8,15 +8,21 @@ import pytesseract
 import argparse
 from cv2 import cv2
 import os
+
+# 3.26.20 -- going to comment this out for now until I get a beter handle on 
+# the pdf->image->OCR the image->reassemble pipeline
 import pdf_page_to_image
 
 
 # construct the argument parser 
+# NOTE: that by importing pdf_page_to_image  you now require new args (-p, --pdf)
+# NOTE: set the required=False as I don't have any images yet when I'm trying to use 
+# pdf_page_to_image
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True, 
+ap.add_argument("-i", "--image", required=False, 
     help="path to input image to be OCR'd")
-# ap.add_argument("-p", "--preprocess", type=str, default="thresh",
-#     help="type of preprocessing to be done")
+ap.add_argument("-p", "--preprocess", type=str, default="thresh",
+    help="type of preprocessing to be done")
 args = vars(ap.parse_args())
 
 
@@ -29,7 +35,7 @@ if args["preprocess"] == "thresh":
     gray = cv2.threshold(gray, 0, 255,
         cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 
-# make a check to see if median blurring shoudl be done to remove noise
+# make a check to see if median blurring should be done to remove noise
 elif args["preprocess"] == "blur":
     gray == cv2.medianBlur(gray, 3)
 

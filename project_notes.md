@@ -1,5 +1,7 @@
 # Tesseract OCR project notes
 
+# BE ABLE TO EXPLAIN EVERY LINE
+
 overall plan is to OCR pdfs in place and then port to WebAssembly
 - want to have a system that can be accessed anywhere
  -- ideally would be faster than using Adobe Pro
@@ -23,6 +25,11 @@ following on how to use tesseract using a tutorial
 - **then** convert the OCR'd images back into pdf format
 
 I'll be good.
+
+3.27.20 - Need to figure out a way to either 
+ - have a single program that does imaging, ocr, and recombination
+ - **or have several smaller programs imported into one main script, then run.**
+
 
 
 
