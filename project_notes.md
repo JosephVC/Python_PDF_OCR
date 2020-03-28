@@ -31,8 +31,6 @@ I'll be good.
  - **or have several smaller programs imported into one main script, then run.**
 
 
-
-
 ## TASK LIST - OCR project
 - [x] install a quality OCR package - tesseract in this case
 - [x] get some experience in said package - online tutorials
@@ -40,14 +38,14 @@ I'll be good.
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
 - [x] figure out a way to OCR an image via Tesseract/pytesseract
 - [ ] alter program in such a way as to 
-    -  [ ] iterate through a pdf and generate images of each page
-    - [ ] iterate through those images to OCR them
-    - [ ] recombine those images (in their oritinal order) into a now-OCR'd pdf
-- [] now that we have a working OCR program, we can tack on combining, splitting, rotating pdfs to make a fuller-featured application
+    -  [ ] iterate through a pdf and generate images of each page = **pdf2image.py**
+    - [ ] iterate through those images to OCR them = **ocr_image.py**
+    - [ ] recombine those images (in their oritinal order) into a now-OCR'd pdf = **image2pdf.py**
+- [ ] now that we have a working OCR program, we can tack on combining, splitting, rotating pdfs to make a fuller-featured application = **[all_this_stuff].py**
  
 ## TASK LIST - web site
 - [ ] I'm wanting to explore React more than Django.
 
 ## Conceptual tasks
 - [ ] understand what OCR is
-- [ ] what is the OCR engine actually doing
+- [ ] what is the OCR engine actually doing and how the engine works
