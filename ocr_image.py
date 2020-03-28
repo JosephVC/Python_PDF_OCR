@@ -11,7 +11,7 @@ import os
 
 # 3.26.20 -- going to comment this out for now until I get a beter handle on 
 # the pdf->image->OCR the image->reassemble pipeline
-import pdf_page_to_image
+import pdf2image
 
 
 # construct the argument parser 

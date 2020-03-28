@@ -1,6 +1,8 @@
 # this converts individual pdf pages to images
 # which can then be OCR'd
 
+#RUNNING SCRIPT: python pdf2image.py -p [path to whatever pdf]
+
 import argparse
 from pdf2image import convert_from_path
 

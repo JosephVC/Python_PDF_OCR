@@ -49,3 +49,6 @@ I'll be good.
 ## Conceptual tasks
 - [ ] understand what OCR is
 - [ ] what is the OCR engine actually doing and how the engine works
+
+## STRETCH GOAL
+- [ ] build an app that is faster at OCR'ing a 1000 page pdf of random data faster than Adobe Pro
