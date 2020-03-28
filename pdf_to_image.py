@@ -1,6 +1,10 @@
 # this converts individual pdf pages to images
 # which can then be OCR'd
 
+#RUNNING SCRIPT: python pdf_to_image.py -p [path to whatever pdf]
+#  the above will create a series of files "output1.jpg", "output2.jpg", etc. in 
+#  the same directory as the script
+
 import argparse
 from pdf2image import convert_from_path
 

@@ -1,5 +1,5 @@
 # Using Tesseract OCR with Python
-# TO RUN THE CODE: python ocr.py --image sample_images/example_01.png
+# TO RUN THE CODE: python ocr_image.py --image [path to whatever images to OCR]
 
 
 # import the  necessary packages
@@ -8,6 +8,7 @@ import pytesseract
 import argparse
 from cv2 import cv2
 import os
+
 
 # construct the argument parser 
 
