@@ -9,17 +9,10 @@ import argparse
 from cv2 import cv2
 import os
 
-# 3.26.20 -- going to comment this out for now until I get a beter handle on 
-# the pdf->image->OCR the image->reassemble pipeline
-import pdf_page_to_image
-
-
 # construct the argument parser 
-# NOTE: that by importing pdf_page_to_image  you now require new args (-p, --pdf)
-# NOTE: set the required=False as I don't have any images yet when I'm trying to use 
-# pdf_page_to_image
+
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=False, 
+ap.add_argument("-i", "--image", required=True, 
     help="path to input image to be OCR'd")
 ap.add_argument("-p", "--preprocess", type=str, default="thresh",
     help="type of preprocessing to be done")
