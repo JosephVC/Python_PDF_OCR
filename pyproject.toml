@@ -12,6 +12,7 @@ img2pdf = "^0.3.3"
 pillow = "^7.0.0"
 opencv-python = "^4.2.0"
 pytesseract = "^0.3.3"
+bleach = "^3.1.4"
 
 [tool.poetry.dev-dependencies]
 
