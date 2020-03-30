@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\Joe\\.virtualenvs\\OCR_project-Wcab23Ua\\Scripts\\python.exe"
 }
