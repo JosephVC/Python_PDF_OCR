@@ -8,7 +8,6 @@
 import argparse
 from pdf2image import convert_from_path
 
-
 # construct the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--pdf", required=True, 
