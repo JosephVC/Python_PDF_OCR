@@ -37,6 +37,7 @@ I'll be good.
 - [x] create a program that will allow certain sections of pdf to be extracted from a file **-- done with pdfrw --**
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
 - [x] figure out a way to OCR an image via Tesseract/pytesseract
+- [ ] create tests
 - [ ] alter program in such a way as to 
     -  [ ] iterate through a pdf and generate images of each page = **pdf2image.py**
     - [ ] iterate through those images to OCR them = **ocr_image.py**
