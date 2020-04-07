@@ -136,4 +136,4 @@ dmypy.json
 .pytype/
 
 # Notes
-project_notes.md
+/project_notes.md
