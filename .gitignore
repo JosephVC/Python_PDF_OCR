@@ -135,5 +135,4 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-# Notes
-/project_notes.md
+

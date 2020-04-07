@@ -31,6 +31,10 @@ I'll be good.
  - **or have several smaller programs imported into one main script, then run.**
 
 
+
+4.6.20 - I suppose to actually define a pipeline for how this is ought to work, if nothing else to make testing better.  Noted below in the task lists.
+
+
 ## TASK LIST - OCR project
 - [x] install a quality OCR package - tesseract in this case
 - [x] get some experience in said package - online tutorials
@@ -38,6 +42,13 @@ I'll be good.
 - [x] create a way to re-combine the above split portions **-- also done with pdfrw; specifically, you can specify a single page or several ranges of pages to be split off, and then those are automatically combined into one pdf by pdfrw**
 - [x] figure out a way to OCR an image via Tesseract/pytesseract
 - [ ] create tests
+   - [ ] test whether pdf_to_image.py actually converts a pdf page to an image
+      - [ ] test whether a multi-page pdf can be converted to images
+   - [ ] test whether that image can actually get OCR'd
+      - [ ] test whether multiple images can get OCR'd
+   - [ ] test whether an image, now OCR'd, can be recombined into a pdf 
+       - [ ] test whether multiple images can be recombined into a pdf
+   - [ ] check for individual words in the resulting pdf 
 - [ ] alter program in such a way as to 
     - [ ] iterate through a pdf and generate images of each page = **pdf2image.py**
     - [ ] iterate through those images to OCR them = **ocr_image.py**
@@ -45,7 +56,7 @@ I'll be good.
 - [ ] now that we have a working OCR program, we can tack on combining, splitting, rotating pdfs to make a fuller-featured application = **[all_this_stuff].py**
  
 ## TASK LIST - web site
-- [ ] I'm wanting to explore React more than Django.
+- [ ] I'm wanting to explore React more than Django.  It comes down to whatever works better for creating a REST API and which plays well with Python, though.
 
 ## Conceptual tasks
 - [ ] understand what OCR is
