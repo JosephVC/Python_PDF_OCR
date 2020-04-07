@@ -19,6 +19,7 @@ def convert():
     # specifically, these are PIL image files
     images = convert_from_path(args["pdf"])
 
+
     # now we just hop through the above list of images
     # save and output with the title 'output[i].jpg', 
     # specifying the output format as JPEG
@@ -26,4 +27,3 @@ def convert():
     for image in images:
         image.save('/OCRd_images/output' + str(i) + '.jpg', 'JPEG')
         i +=1
-    
