@@ -17,7 +17,8 @@ def test_is_prime():
 
 # test whether the pdf_to_image module actually works
 def test_pdf_to_image():
-    assert '/'
+    # run something through pdf_to_image and check if it's there
+    assert Path('../OCRd_images/Output1.jpg').is_file
 
 def test_ocr_image_exists():
     pass
