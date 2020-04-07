@@ -1,4 +1,7 @@
 import pytest
+from pathlib import Path
+
+from alterpdf import pdf_to_image
 
 # test, uh test cases
 
@@ -11,8 +14,10 @@ def test_is_prime():
 
 
 # test cases to actually test pdfs
-def test_pdf_exists():
-    pass
+
+# test whether the pdf_to_image module actually works
+def test_pdf_to_image():
+    assert '/'
 
 def test_ocr_image_exists():
     pass

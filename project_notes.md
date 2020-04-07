@@ -39,7 +39,7 @@ I'll be good.
 - [x] figure out a way to OCR an image via Tesseract/pytesseract
 - [ ] create tests
 - [ ] alter program in such a way as to 
-    -  [ ] iterate through a pdf and generate images of each page = **pdf2image.py**
+    - [ ] iterate through a pdf and generate images of each page = **pdf2image.py**
     - [ ] iterate through those images to OCR them = **ocr_image.py**
     - [ ] recombine those images (in their oritinal order) into a now-OCR'd pdf = **image2pdf.py**
 - [ ] now that we have a working OCR program, we can tack on combining, splitting, rotating pdfs to make a fuller-featured application = **[all_this_stuff].py**
