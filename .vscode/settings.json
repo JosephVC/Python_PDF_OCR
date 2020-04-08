@@ -1,4 +1,6 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "C:\\Program Files\\Python38\\python.exe"
+clean_up_modules
+    "python.pythonPath": "C:\\Users\\Joseph\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+
 }

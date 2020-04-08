@@ -1,5 +1,6 @@
-import pytest
 from pathlib import Path
+import pytest
+
 
 from alterpdf import pdf_to_image
 
@@ -9,6 +10,7 @@ from alterpdf import pdf_to_image
 def test_pdf_to_image():
     pdf_to_image.convert('-p', '../sample_pdfs/meetingminutes.pdf')
     # run something through pdf_to_image and check if it's there
+
     assert Path('../output_images/output1.jpg').is_file
 
 
