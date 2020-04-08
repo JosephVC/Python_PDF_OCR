@@ -21,7 +21,7 @@ args = vars(ap.parse_args())
 
 
 # load the example image and convert it to grayscale
-def convert():
+def ocr():
     image = cv2.imread(args["image"])
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
@@ -46,6 +46,7 @@ def convert():
     print(text)
 
     # show the output images
+    # these need to be saved to 
     cv2.imshow("Image", image)
     cv2.imshow("Output", gray)
     cv2.waitKey(0)
