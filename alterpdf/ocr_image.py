@@ -1,5 +1,5 @@
 # Using Tesseract OCR with Python
-# TO RUN THE CODE: python ocr_image.py --image [path to whatever images to OCR]
+# TO RUN THE CODE: python ocr_image.py --image [path to whatever images you have to OCR]
 
 
 # import the  necessary packages
@@ -37,7 +37,8 @@ def ocr():
     # write the grayscale image to disk as a temporary file so we can apply OCR 
     # to it
     filename = "{}.png".format(os.getpid())
-    cv2.imwrite(filename, gray)
+    output_folder = "../OCR'd_images"
+    cv2.imwrite(output_folder, filename, gray)
 
     # load the image as a PIL/Pillow image, apply OCR, and then delete
     # the temp file
@@ -46,7 +47,9 @@ def ocr():
     print(text)
 
     # show the output images
-    # these need to be saved to 
-    cv2.imshow("Image", image)
-    cv2.imshow("Output", gray)
-    cv2.waitKey(0)
+    # these need to be saved to a file rather than just output to the stdout
+
+    
+    # cv2.imshow("Image", image)
+    # cv2.imshow("Output", gray)
+    # cv2.waitKey(0)
