@@ -10,7 +10,7 @@ import os
 # store image and pdf path
 # TODO: update this to take arguments rather than hard-coded paths
 # TODO: update to iterate through a directory of OCR'd images
-img_path = "../OCR'd_images/output1.jpg"
+img_path = "../output_images/output1.jpg"
 pdf_path = "../OCRd_pdfs/output1.pdf"
 
 # open image
